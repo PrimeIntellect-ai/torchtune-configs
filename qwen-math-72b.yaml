@@ -99,6 +99,10 @@ optimizer_in_bwd: True  # True saves memory. Requires gradient_accumulation_step
 loss:
   _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
 
+lr_scheduler:
+  _component_: torchtune.training.lr_schedulers.get_cosine_schedule_with_warmup
+  num_warmup_steps: 100
+
 metric_logger:
   _component_: torchtune.training.metric_logging.WandBLogger
   project: torchtune
