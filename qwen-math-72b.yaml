@@ -24,7 +24,7 @@ tokenizer:
   _component_: torchtune.models.qwen2_5.qwen2_5_tokenizer
   path: /workspace/qwen-72b-math/vocab.json
   merges_file: /workspace/qwen-72b-math/merges.txt
-  max_seq_len: 4096
+  max_seq_len: 20000
 
 # Checkpointer
 checkpointer:
@@ -81,7 +81,7 @@ dataset:
   conversation_column: messages
   conversation_style: openai
   split: train
-  packed: False  # True increases speed
+  packed: True  # True increases speed
 seed: null
 shuffle: True
 
