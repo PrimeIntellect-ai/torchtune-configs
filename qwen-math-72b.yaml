@@ -92,7 +92,8 @@ fsdp_cpu_offload: True
 batch_size: 1
 gradient_accumulation_steps: 1  # Use to increase effective batch size
 optimizer:
-  _component_: torchao.prototype.low_bit_optim.CPUOffloadOptimizer
+  _component_: torch.optim.AdamW
+  fused: True
   lr: 4e-5
   offload_gradients: True
 optimizer_in_bwd: True  # True saves memory. Requires gradient_accumulation_steps=1
