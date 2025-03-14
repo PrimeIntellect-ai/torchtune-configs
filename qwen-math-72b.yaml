@@ -77,7 +77,7 @@ resume_from_checkpoint: False
 # Dataset
 dataset:
   _component_: torchtune.datasets.chat_dataset
-  source: justus27/synthetic-sft-r1-3
+  source: justus27/reasoning-test-4
   conversation_column: messages
   conversation_style: openai
   split: train
