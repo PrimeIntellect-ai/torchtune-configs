@@ -81,7 +81,7 @@ dataset:
   conversation_column: messages
   conversation_style: openai
   split: train
-  packed: True  # True increases speed
+  packed: False  # True increases speed
 seed: null
 shuffle: True
 
