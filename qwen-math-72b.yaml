@@ -13,7 +13,7 @@
 #
 # This config is for fine-tuning on 2+ GPUs.
 
-output_dir: /workspace/qwen-72b-r1-distill-2 # /tmp may be deleted by your system. Change it to your preference.
+output_dir: /workspace/qwen-72b-r1-distill-stage2 # /tmp may be deleted by your system. Change it to your preference.
 
 # Model arguments
 model:
@@ -29,7 +29,7 @@ tokenizer:
 # Checkpointer
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /workspace/qwen-72b-math
+  checkpoint_dir: /workspace/lightr1-stage1
   checkpoint_files: [
     model-00001-of-00037.safetensors,
     model-00002-of-00037.safetensors,
