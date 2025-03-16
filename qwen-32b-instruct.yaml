@@ -14,7 +14,7 @@
 #
 # This config is for fine-tuning on 2+ GPUs.
 
-output_dir: /workspace/qwen-32b-instruct-r1-distill # /tmp may be deleted by your system. Change it to your preference.
+output_dir: /workspace/qwen-32b-instruct-r1-distill-stage1 # /tmp may be deleted by your system. Change it to your preference.
 
 # Model arguments
 model:
