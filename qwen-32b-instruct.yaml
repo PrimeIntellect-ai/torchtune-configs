@@ -92,7 +92,7 @@ metric_logger:
 device: cuda
 
 # Memory management / performance
-enable_activation_checkpointing: True  # True reduces memory
+enable_activation_checkpointing: False  # True reduces memory
 enable_activation_offloading: False  # True reduces memory
 dtype: bf16
 clip_grad_norm: null
