@@ -56,8 +56,8 @@ shuffle: True
 epochs: 5
 max_steps_per_epoch: null
 fsdp_cpu_offload: False
-batch_size: 16
-gradient_accumulation_steps: 1  # Use to increase effective batch size
+batch_size: 4
+gradient_accumulation_steps: 3  # Use to increase effective batch size
 optimizer:
   _component_: torch.optim.AdamW
   fused: False
