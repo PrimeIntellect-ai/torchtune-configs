@@ -13,7 +13,7 @@
 #
 # This config is for fine-tuning on 2+ GPUs.
 
-output_dir: /workspace/qwen-7b-instruct-r1-distill-stage1 # /tmp may be deleted by your system. Change it to your preference.
+output_dir: /alloc/data/qwen-7b-instruct-r1-distill-stage1 # /tmp may be deleted by your system. Change it to your preference.
 
 # Model arguments
 model:
@@ -22,14 +22,14 @@ model:
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.qwen2_5.qwen2_5_tokenizer
-  path: /workspace/qwen-2.5/vocab.json
-  merges_file: /workspace/qwen-2.5/merges.txt
+  path: /alloc/data/torch-tune/qwen-2.5/vocab.json
+  merges_file: /alloc/data/torch-tune/qwen-2.5/merges.txt
   max_seq_len: 20000
 
 # Checkpointer
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /workspace/qwen-7b-instruct
+  checkpoint_dir: /alloc/data/torch-tune/qwen-7b-instruct
   checkpoint_files: [
     model-00001-of-00004.safetensors,
     model-00002-of-00004.safetensors,
