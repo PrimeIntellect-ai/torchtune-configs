@@ -29,7 +29,7 @@ tokenizer:
 # Checkpointer
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /workspace/qwen-72b-instruct
+  checkpoint_dir: /workspace/qwen-72b-instruct-stage-1
   checkpoint_files: [
     model-00001-of-00037.safetensors,
     model-00002-of-00037.safetensors,
