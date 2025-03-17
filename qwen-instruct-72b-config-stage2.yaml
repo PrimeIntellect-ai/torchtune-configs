@@ -22,14 +22,14 @@ model:
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.qwen2_5.qwen2_5_tokenizer
-  path: /workspace/qwen-72b-instruct-stage-1/vocab.json
-  merges_file: /workspace/qwen-72b-instruct-stage-1/merges.txt
+  path: /workspace/qwen-72b-instruct-stage-1-alt/vocab.json
+  merges_file: /workspace/qwen-72b-instruct-stage-1-alt/merges.txt
   max_seq_len: 20000
 
 # Checkpointer
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /workspace/qwen-72b-instruct-stage-1
+  checkpoint_dir: /workspace/qwen-72b-instruct-stage-1-alt
   checkpoint_files: [
     ft-model-00001-of-00037.safetensors,
     ft-model-00002-of-00037.safetensors,
