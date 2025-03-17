@@ -94,7 +94,7 @@ gradient_accumulation_steps: 1  # Use to increase effective batch size
 optimizer:
   _component_: torch.optim.AdamW
   fused: False
-  lr: 4e-5
+  lr: 5e-5
 optimizer_in_bwd: True  # True saves memory. Requires gradient_accumulation_steps=1
 loss:
   _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
