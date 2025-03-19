@@ -23,7 +23,7 @@ output_dir: /alloc/data/llama_8b_r1_distill # /tmp may be deleted by your system
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.llama_r1.llama3_r1_tokenizer
-  tokenizer_path: /alloc/data/llama_8b_r1
+  tokenizer_path: /alloc/data/llama8b_r1
 
 # Dataset
 dataset:
@@ -42,7 +42,7 @@ model:
 
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /alloc/data/llama_8b_r1
+  checkpoint_dir: /alloc/data/llama8b_r1
   checkpoint_files: [
     model-00001-of-00002.safetensors,
     model-00001-of-00002.safetensors,
