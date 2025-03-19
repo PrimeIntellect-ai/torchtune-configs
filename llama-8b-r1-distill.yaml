@@ -44,8 +44,8 @@ checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
   checkpoint_dir: /alloc/data/llama8b_r1
   checkpoint_files: [
-    model-00001-of-00002.safetensors,
-    model-00001-of-00002.safetensors,
+    model-00001-of-000002.safetensors,
+    model-00002-of-000002.safetensors,
   ]
   recipe_checkpoint: null
   output_dir: ${output_dir}
