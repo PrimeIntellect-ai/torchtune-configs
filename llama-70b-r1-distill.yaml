@@ -18,7 +18,7 @@
 # best to use 8B_full_single_device.yaml for those cases
 
 
-output_dir: /workspace/llama_70b_r1_distill # /tmp may be deleted by your system. Change it to your preference.
+output_dir: /workspace/llama_70b_r1_distill_lowerlr # /tmp may be deleted by your system. Change it to your preference.
 
 # Tokenizer
 tokenizer:
