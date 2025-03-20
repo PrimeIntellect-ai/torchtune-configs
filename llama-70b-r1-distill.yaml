@@ -78,7 +78,7 @@ optimizer:
 loss:
   _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
 max_steps_per_epoch: null
-fsdp_cpu_offload: False
+fsdp_cpu_offload: True
 clip_grad_norm: null
 compile: False  # torch.compile the model + loss, True increases speed + decreases memory
 optimizer_in_bwd: False  # True saves memory. Requires gradient_accumulation_steps=1
