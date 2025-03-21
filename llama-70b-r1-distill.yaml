@@ -28,7 +28,7 @@ tokenizer:
 # Dataset
 dataset:
   _component_: torchtune.datasets.chat_dataset
-  source: justus27/lightr1-codeforces-short
+  source: justus27/lightr1-codeforces
   conversation_column: messages
   conversation_style: openai
   split: train
