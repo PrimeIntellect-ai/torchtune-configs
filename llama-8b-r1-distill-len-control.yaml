@@ -42,7 +42,7 @@ model:
 
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: ~/llama8b_r1
+  checkpoint_dir: ~/llama_8b_r1
   checkpoint_files: [
     model-00001-of-000002.safetensors,
     model-00002-of-000002.safetensors,
