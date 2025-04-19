@@ -28,7 +28,7 @@ tokenizer:
 # Dataset
 dataset:
   _component_: torchtune.datasets.chat_dataset
-  source: justus27/len-controlled-sft
+  source: justus27/len-controlled-sft-3
   conversation_column: messages
   conversation_style: openai
   split: train
@@ -54,11 +54,11 @@ resume_from_checkpoint: False
 
 # Fine-tuning arguments
 batch_size: 2
-epochs: 5
+epochs: 10
 
 optimizer:
   _component_: torch.optim.AdamW
-  lr: 3e-5
+  lr: 5e-5
   fused: True
 loss:
   _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
