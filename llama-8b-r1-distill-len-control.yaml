@@ -18,12 +18,12 @@
 # best to use 8B_full_single_device.yaml for those cases
 
 
-output_dir: ~/llama_8b_r1_len_control # /tmp may be deleted by your system. Change it to your preference.
+output_dir: ./llama_8b_r1_len_control # /tmp may be deleted by your system. Change it to your preference.
 
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.llama_r1.llama3_r1_tokenizer
-  tokenizer_path: ~/llama_8b_r1
+  tokenizer_path: ./llama_8b_r1
 
 # Dataset
 dataset:
@@ -42,7 +42,7 @@ model:
 
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: ~/llama_8b_r1
+  checkpoint_dir: ./llama_8b_r1
   checkpoint_files: [
     model-00001-of-000002.safetensors,
     model-00002-of-000002.safetensors,
