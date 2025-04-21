@@ -53,7 +53,7 @@ checkpointer:
 resume_from_checkpoint: False
 
 # Fine-tuning arguments
-batch_size: 16
+batch_size: 2
 epochs: 10
 
 optimizer:
