@@ -53,7 +53,7 @@ checkpointer:
 resume_from_checkpoint: False
 
 # Fine-tuning arguments
-batch_size: 16
+batch_size: 2
 epochs: 10
 
 optimizer:
@@ -66,7 +66,7 @@ max_steps_per_epoch: null
 clip_grad_norm: null
 compile: False  # torch.compile the model + loss, True increases speed + decreases memory
 optimizer_in_bwd: False  # True saves memory. Requires gradient_accumulation_steps=1
-gradient_accumulation_steps: 16  # Use to increase effective batch size
+gradient_accumulation_steps: 8  # Use to increase effective batch size
 
 # Training env
 device: cuda
