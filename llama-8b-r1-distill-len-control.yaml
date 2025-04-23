@@ -28,13 +28,18 @@ tokenizer:
 # Dataset
 dataset:
   _component_: torchtune.datasets.chat_dataset
-  source: justus27/len-control-data-sft
+  source: justus27/lencontrol-testing
   conversation_column: messages
   conversation_style: openai
   split: train
   packed: False  # True increases speed
 seed: null
 shuffle: True
+
+lr_scheduler:
+  _component_: torchtune.training.lr_schedulers.get_cosine_schedule_with_warmup
+  num_warmup_steps: 20
+
 
 # Model Arguments
 model:
