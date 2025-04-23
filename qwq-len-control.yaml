@@ -63,7 +63,7 @@ seed: null
 shuffle: True
 
 # Fine-tuning arguments
-epochs: 5
+epochs: 8
 max_steps_per_epoch: null
 fsdp_cpu_offload: False
 batch_size: 1
