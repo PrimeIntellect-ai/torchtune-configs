@@ -24,7 +24,7 @@ tokenizer:
   _component_: torchtune.models.qwen2_5.qwen2_5_tokenizer
   path: ./qwq/vocab.json
   merges_file: ./qwq/merges.txt
-  max_seq_len: 12000
+  max_seq_len: 11000
 
 # Checkpointer
 checkpointer:
@@ -72,7 +72,7 @@ optimizer:
   _component_: torch.optim.AdamW
   fused: False
   lr: 4e-5
-optimizer_in_bwd: True  # True saves memory. Requires gradient_accumulation_steps=1
+optimizer_in_bwd: False  # True saves memory. Requires gradient_accumulation_steps=1
 loss:
   _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
 
