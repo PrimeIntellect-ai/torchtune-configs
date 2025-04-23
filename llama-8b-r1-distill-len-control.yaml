@@ -18,7 +18,7 @@
 # best to use 8B_full_single_device.yaml for those cases
 
 
-output_dir: ./llama_8b_r1_len_control # /tmp may be deleted by your system. Change it to your preference.
+output_dir: ./llama_8b_r1_len_control_2 # /tmp may be deleted by your system. Change it to your preference.
 
 # Tokenizer
 tokenizer:
